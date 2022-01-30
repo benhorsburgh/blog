@@ -1,0 +1,12 @@
+body {
+    background-color: black !important;
+}
+main {
+    background-color: white !important;
+}
+#site-navigation, .bd-toc, .bd-toc nav, .topbar-main, .topbarbtn {
+    background-color: #edfbff !important;
+}
+div.dropdown-buttons-trigger div.dropdown-buttons button.topbarbtn {
+    color: black;
+}

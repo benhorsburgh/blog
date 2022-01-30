@@ -1,0 +1,18 @@
+format: jb-book
+root: README.md
+parts:
+  - caption: Python
+    chapters:
+    - file: python/tips and tricks
+      sections:
+      - file: python/tips and tricks/structural pattern matching
+      - file: python/tips and tricks/regex lookaround
+    - file: python/problems
+      sections:
+      - file: python/problems/fizzbuzz
+  - caption: Code Quality
+    chapters:
+    - file: code quality/pylint
+      sections:
+      - file: code quality/pylint/c0103
+      - file: code quality/pylint/c0104

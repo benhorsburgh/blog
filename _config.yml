@@ -1,0 +1,20 @@
+title: Ben Horsburgh
+author: Ben Horsburgh
+logo: logo.png
+
+execute:
+  execute_notebooks: force
+
+repository:
+  url: https://github.com/benhorsburgh/tamingmonty
+  branch: main
+
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  comments:
+    utterances:
+      repo: "github.com/benhorsburgh/tamingmonty"
+      theme=: "github-dark"
+      issue-term: "pathname"
