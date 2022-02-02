@@ -1,2 +1,4 @@
 jupyter-book
+jupyterlab
+sphinx-sitemap
 black

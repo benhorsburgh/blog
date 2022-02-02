@@ -1,20 +1,37 @@
 title: Ben Horsburgh
 author: Ben Horsburgh
-logo: logo.png
+logo: logo no text.svg
+exclude_patterns: [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "README.md"]
 
 execute:
   execute_notebooks: force
 
 repository:
-  url: https://github.com/benhorsburgh/tamingmonty
+  url: https://github.com/benhorsburgh/blog
   branch: main
 
 html:
+  favicon: favicon.ico
+  google_analytics_id: UA-44755646-1
   use_issues_button: true
   use_repository_button: true
   use_edit_page_button: true
+  baseurl: https://benhorsburgh.com
   comments:
     utterances:
-      repo: "github.com/benhorsburgh/tamingmonty"
+      repo: "benhorsburgh/blog"
       theme=: "github-dark"
       issue-term: "pathname"
+      
+sphinx:
+  recursive_update          : false
+  config:
+    html_baseurl: 'https://benhorsburgh.com/'
+  extra_extensions:
+    - sphinx_sitemap
+    
+launch_buttons:
+  notebook_interface        : classic  
+  binderhub_url             : https://mybinder.org  
+  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+  colab_url                 : https://colab.research.google.com

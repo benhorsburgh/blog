@@ -1,12 +1,43 @@
+:root {
+    --bh-dark: black;
+    --bh-mid: #aaaaaa;
+    --bh-light: white;
+}
 body {
-    background-color: black !important;
+    background-color: var(--bh-dark) !important;
 }
 main {
     background-color: white !important;
 }
-#site-navigation, .bd-toc, .bd-toc nav, .topbar-main, .topbarbtn {
-    background-color: #edfbff !important;
+
+.bd-toc, .bd-toc nav, .topbar-main, .topbarbtn  {
+    background-color: var(--bh-dark) !important;
 }
-div.dropdown-buttons-trigger div.dropdown-buttons button.topbarbtn {
-    color: black;
+.bd-toc div.onthispage, .bd-toc .toc-entry a:hover {
+    color: var(--bh-light);
 }
+#navbar-toggler, .topbar .topbar-main button.topbarbtn
+{
+    color: var(--bh-light) !important;
+}
+#site-navigation, .caption-text {
+    background-color: var(--bh-dark) !important;
+    color: var(--bh-light) !important;
+}
+#site-navigation h1.site-logo {
+    color: var(--bh-light) !important;
+}
+
+/* applies to normal sidebar links */
+#site-navigation nav ul.nav li a, #site-navigation nav ul.nav ul li a {
+    color: var(--bh-mid) !important;
+}
+
+/* applies to sidebar hover and active */
+#site-navigation nav ul.nav a:hover, #site-navigation nav ul.nav li.active>a, #site-navigation nav ul.nav li.active>a:hover {
+    color: var(--bh-light) !important;
+}
+.toc-entry>.nav-link.active {
+    color: var(--bh-light) !important;
+}
+
