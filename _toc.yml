@@ -3,10 +3,10 @@ root: index
 parts:
   - caption: Python
     chapters:
-    - file: python/tips and tricks
+    - file: python/language
       sections:
-      - file: python/tips and tricks/structural pattern matching
-      - file: python/tips and tricks/regex lookaround
+      - file: python/language/structural pattern matching
+      - file: python/language/regex lookaround
     - file: python/problems
       sections:
       - file: python/problems/fizzbuzz
